@@ -1,3 +1,5 @@
 # cuts
-# code from SANDISK32 
+
+
+code from SANDISK32 
 
