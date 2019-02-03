@@ -3,6 +3,9 @@
   In this version of the code, I've got feature1, 2 and 3, plus the relatively new feature5, which is the weird ~60 sec filter in 
 calculation.  I'll run this code overnight and generate feature data with which to try analysis.
   RESULT:   code timed out after 4 hours of running.  
+  I timed proc_tes_2Feb.py running through all the features listed just above plus the results (using cuts analysis from moby2); it comes out to a little over 2 min for the first TOD of the set.     On the basis of this, I'm now trying "len=20" to go through 20 TODs in batch mode.  This ought to finish in about 140 min, right?  
+
+
   
   
   
