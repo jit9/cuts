@@ -8,6 +8,8 @@ it comes out to a little over 2 min for the first TOD of the set.     On the bas
 20 TODs in batch mode.  This ought to finish in about 45 min.
   This finished fairly promptly;  but the length of the feature output files was screwy.   I deleted these output .npy files and am running this code again.
   Note that if 20 TODs will run in ~45 min., I could manually concoct four or five copies of the code to tackle different sets of 20 TODs each and run them in parallel manually.  This, the analysis code could simply read all the input files and combine the data into the full 70 or 80 TOD or 100 TOD data set.   Better be carefully about the order of reading and such.
+  I figured out that I was appending to the feature arrays in the wrong position within the loops in the code.  I think it works now.  Also, the result array was being constructed incorrectly in this code!   yeeech.  
+
 
 
 
