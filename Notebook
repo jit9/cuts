@@ -11,12 +11,9 @@ it comes out to a little over 2 min for the first TOD of the set.     On the bas
   I figured out that I was appending to the feature arrays in the wrong position within the loops in the code.  I think it works now.  Also, the result array was being constructed incorrectly in this code!   yeeech.    ---->>>  nope:  the features are looking ok, but the result_train_tes_3Feb.npy file is too short !!!  More work to do.  :(
     
 4 Feb 2019
-    proc_tes_2Feb.py is all messed up with indices !   j count runs too big - why?  k count is off -- why ?
+    proc_tes_2Feb.py is all messed up with indices !   j count runs too big - why?  k count is off -- why ?    
+    Oh ------   t, the file of Yilun's tes qualified detectors is not a COUNT of those detectors, but rather a LIST !!!  I need to change the counting system and not just say   for j in t:   and for k in t:    !!!!!!   (Idiot!)
     
-    
-    
-    
-
 
 
 
