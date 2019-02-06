@@ -12,8 +12,72 @@ it comes out to a little over 2 min for the first TOD of the set.     On the bas
     
 4 Feb 2019
     proc_tes_2Feb.py is all messed up with indices !   j count runs too big - why?  k count is off -- why ?    
-    Oh ------   t, the file of Yilun's tes qualified detectors is not a COUNT of those detectors, but rather a LIST !!!  I need to change the counting system and not just say   for j in t:   and for k in t:    !!!!!!   (Idiot!)
     
+6 Feb 2019
+    I rewrote the operating parts of proc_tes_2Feb.py and it seems to work now.
+    Generated results and feature1, feature2, feature3, feature5 for 5 TODs (I think...  the test set had 1060 samples in it for the following experiments):
+NN = 3
+1060 samples
+True-positives:  22.3 %
+True-negatives:  48.4 %
+False-positives: 12.6 %
+False-negatives: 16.7 %
+ 
+Accuracy:        70.7 %
+Precision:       63.8 %
+Sensitivity:     57.1 %
+
+NN = 4
+1060 samples
+True-positives:  16.5 %
+True-negatives:  54.0 %
+False-positives: 7.1 %
+False-negatives: 22.5 %
+ 
+Accuracy:        70.5 %
+Precision:       70.0 %
+Sensitivity:     42.4 %
+
+NN = 2
+1060 samples
+True-positives:  15.5 %
+True-negatives:  54.2 %
+False-positives: 6.8 %
+False-negatives: 23.5 %
+ 
+Accuracy:        69.7 %
+Precision:       69.5 %
+Sensitivity:     39.7 %
+
+Using ONLY feture5: 
+1060 samples
+True-positives:  22.1 %
+True-negatives:  45.3 %
+False-positives: 15.8 %
+False-negatives: 16.9 %
+ 
+Accuracy:        67.4 %
+Precision:       58.4 %
+Sensitivity:     56.7 %
+
+----
+Back to feat1, feat2, feat3 only
+NN = 3
+1060 samples
+True-positives:  18.3 %
+True-negatives:  46.0 %
+False-positives: 15.0 %
+False-negatives: 20.7 %
+ 
+Accuracy:        64.3 %
+Precision:       55.0 %
+Sensitivity:     47.0 %
+
+Recap:
+Best accuracy =  70.7% with feat1, feat2, feat3, feat5 avail, NN=6
+Lowest FP rate =  6.8% with     ""  ,  NN = 2
+Lowest FN rate =  16.7%  with    " ",  NN = 3
+
 
 
 
