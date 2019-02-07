@@ -77,6 +77,9 @@ Recap:
 Best accuracy =  70.7% with feat1, feat2, feat3, feat5 avail, NN=6
 Lowest FP rate =  6.8% with     ""  ,  NN = 2
 Lowest FN rate =  16.7%  with    " ",  NN = 3
+Best sensitivity =  57.1%  with  " ",  NN= 3
+
+
 
 
 
