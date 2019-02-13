@@ -1,3 +1,28 @@
+13 Feb 2019
+
+I finally got Yilun's mlpipe pipeline working.  Here are a couple of initial results, using his dataset.h5 data and his initial set of features which are only Loic's original pickle parameters, with no "human intervention":
+
+== VALIDATION RESULTS: ==
+
+  epoch    batch  model              loss      base    accuracy    tp    tn    fp    fn    precision    recall        f1     time/s
+-------  -------  --------------  -------  --------  ----------  ----  ----  ----  ----  -----------  --------  --------  ---------
+      0        0  KNNModel-3      2.08539  0.422877    0.939623  6877  9059   729   295     0.904155  0.958868  0.930708  0.237996
+      0        0  DecisionTree    1.69642  0.422877    0.950884  6874  9253   535   298     0.927791  0.95845   0.942871  0.0137727
+      0        0  XGBoost         1.35226  0.422877    0.960849  7150  9146   642    22     0.917608  0.996933  0.955627  0.0628161
+      0        0  RandomForest-5  1.40317  0.422877    0.959375  7151  9120   668    21     0.914567  0.997072  0.954039  0.0773206
+
+Now with nearest neighbors = 7 in the KKN Model:
+
+== VALIDATION RESULTS: ==
+
+  epoch    batch  model              loss      base    accuracy    tp    tn    fp    fn    precision    recall        f1     time/s
+-------  -------  --------------  -------  --------  ----------  ----  ----  ----  ----  -----------  --------  --------  ---------
+      0        0  DecisionTree    1.77584  0.422877    0.948585  6831  9257   531   341     0.927873  0.952454  0.940003  0.0162508
+      0        0  XGBoost         1.35226  0.422877    0.960849  7152  9144   644    20     0.917394  0.997211  0.955639  0.0583732
+      0        0  KNNModel-7      1.80232  0.422877    0.947818  7048  9027   761   124     0.902548  0.982711  0.940925  0.225894
+      0        0  RandomForest-5  1.45408  0.422877    0.957901  7165  9081   707     7     0.910188  0.999024  0.952539  0.0734301
+
+
 7 Feb 2019
 
 Yilun says he is now using analyse.py to generate computer-only pickle parameters;  then using process_cuts.py (?? right file ) it runs the AI routine of choice with whatever parameters are selected.   Yilun has streamlined Loic's code, too.    This generated the h5 data file which can run in the AI pipeline Yilun earlier created.
