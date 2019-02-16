@@ -1,5 +1,5 @@
 # cuts
 
 
-code from SANDISK32 
+Repository for JIT's cuts work; currently not well organized! 
 
