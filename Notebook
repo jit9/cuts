@@ -1,3 +1,15 @@
+28 November 2019
+
+On Simons1 server, I am working with python3 code.   I copied anal_fullset.py code from feynman ~/mnt/act3/users/treu9/data, converted to 
+python3.  I copied results.npy and featx_train.npy where x= 1, 2 and 3.   See feynman code from Feb., 2019 to backtrack and find which
+TODs these represent.   
+
+I copied anal_21Nov.py (on simons1) over to anal_28Nov.py and ran the neural network code using only features 1, 2 and 3.  
+This converged in just 2 epochs (!) to an accuracy of 78%.  
+Seems I need more features.  
+
+
+
 13 Feb 2019
 
 I finally got Yilun's mlpipe pipeline working.  Here are a couple of initial results, using his dataset.h5 data and his initial set of features which are only Loic's original pickle parameters, with no "human intervention":
