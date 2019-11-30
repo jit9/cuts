@@ -1,6 +1,6 @@
 30 November 2019
 
-Running processing_general.py and I intend to use PCA to reduce features to 3 or 4 and then run neural net (on Simons1 where 
+On feynman, I am running processing_general.py and I intend to use PCA to reduce features to 3 or 4 and then run neural net (on Simons1 where 
 it is available (keras).
 
 
