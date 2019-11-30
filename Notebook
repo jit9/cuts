@@ -1,3 +1,10 @@
+30 November 2019
+
+Running processing_general.py and I intend to use PCA to reduce features to 3 or 4 and then run neural net (on Simons1 where 
+it is available (keras).
+
+
+
 28 November 2019
 
 On Simons1 server, I am working with python3 code.   I copied anal_fullset.py code from feynman ~/mnt/act3/users/treu9/data, converted to 
