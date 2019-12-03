@@ -1,3 +1,13 @@
+3 December 2019
+    It's good that the neural network code is now working.  72.5% accuracy is "interesting" but not good enough.
+    Next steps include:  
+(a)  checking that the math is correct and the proper TODs are being analyzed;
+(b)  adding back in additional features such as Loic parameters that do not require human thresh-holding
+(c)  then...  IF better accuracy is achieved, then graduate to checking on TODs not part of the group used for training.
+
+
+
+
 2 December 2019
 
 On feynman,  I ran the processing code using Yilun's "tes" screened TODs.
@@ -6,7 +16,7 @@ Then, on simons1,  I read these into anal_28Nov.py:
 feat1              = np.load('feature1_train_tes_30Nov19.npy')
 feat2              = np.load('feature2_train_tes_30Nov19.npy')
 feat3              = np.load('feature3_train_tes_30Nov19.npy')
-feat4              = np.load('feature4_train_tes_30Nov19.npy')
+feat4              = np.load('feature4_train_tes_30Nov19.npy')  (what's this feature?  Is it "CV" ?)
 
 fp = {'feat1':feat1, 'feat2':feat2, 'feat3':feat3, 'feat4':feat4}
 results = np.load('result_train_tes_30Nov19.npy')
