@@ -1,3 +1,103 @@
+2 December 2019
+
+On feynman,  I ran the processing code using Yilun's "tes" screened TODs.
+Then, on simons1,  I read these into anal_28Nov.py:
+
+feat1              = np.load('feature1_train_tes_30Nov19.npy')
+feat2              = np.load('feature2_train_tes_30Nov19.npy')
+feat3              = np.load('feature3_train_tes_30Nov19.npy')
+feat4              = np.load('feature4_train_tes_30Nov19.npy')
+
+fp = {'feat1':feat1, 'feat2':feat2, 'feat3':feat3, 'feat4':feat4}
+results = np.load('result_train_tes_30Nov19.npy')
+
+
+
+Here are the results:
+
+StandardScaler is on.
+(' shape of X_train_scaled =  ', (48336, 4))
+X-test shape: (16112, 4)
+x-train shape: (48336, 4)
+y_test shape: (16112,)
+y-train shape: (48336,)
+
+('nNeighbors =  ', 3)
+ 
+ 
+('shape of y_test = ', (16112,), '    shape of y_pred = ', (16112,), '\n')
+
+Results:  KNN Model
+
+
+
+
+True-positives  	 1503
+True-negatives  	 9802
+False-positives 	 1885
+False-negatives 	 2922
+
+
+
+total samples  	 16112 
+
+
+True-positives:  9.3 %
+True-negatives:  60.8 %
+False-positives: 11.7 %
+False-negatives: 18.1 %
+ 
+Accuracy:        70.2 %
+Precision:       44.4 %
+Sensitivity:     34.0 %
+ 
+
+XGB Results: 
+Accuracy of xgb on test set:     0.7286494538232373
+ Start of PCA segment....  shape of X_train_scaled) is : (48336, 4)
+ shape of y_train  (48336,)
+ 
+  PCA transformed 
+PCA component shape : (4, 4)
+('shape of X_pca ', (48336, 4))
+ X_pca[0] shape : (4,)
+      [1]         (4,)
+      [2]         (4,)
+      [3]         (4,)
+shape of comp1 (48336,)
+shape of comp2 (48336,)
+shape of comp3 (48336,)
+shape of comp4 (48336,)
+shape of truth (48336,)
+
+
+
+
+
+shape (X_train) (48336, 4)
+ shape of features_train:   (48336, 5)
+ shape of Dplot :   (48336, 5)
+
+
+
+
+
+ STARTING NEURAL NETWORK SECTION 
+
+
+
+
+Train on 48336 samples, validate on 16112 samples
+
+48336/48336 [==============================] - 1s 28us/step - loss: 0.5807 - acc: 0.7326 - val_loss: 0.5880 - val_acc: 0.7254
+Epoch 25/25
+48336/48336 [==============================] - 1s 28us/step - loss: 0.5807 - acc: 0.7326 - val_loss: 0.5880 - val_acc: 0.7254
+
+
+
+
+
+
 30 November 2019
 
 On feynman, I am running processing_general.py and I intend to use PCA to reduce features to 3 or 4 and then run neural net (on Simons1 where 
