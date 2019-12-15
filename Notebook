@@ -1,3 +1,17 @@
+15 Decemberr 2019
+anal_13Dec.py and anal_15Dec.py are on simons1 in the treu9 folder.
+anal_13Dec.py has an neural network section at the end which produces accuracy around 75% using 3 or 4 features 
+    feat1              = np.load('feature1_train_tes_30Nov19.npy')
+feat2              = np.load('feature2_train_tes_30Nov19.npy')
+feat3              = np.load('feature3_train_tes_30Nov19.npy')
+feat4              = np.load('feature4_train_tes_30Nov19.npy') 
+
+anal_15Dec.py was constructed to test Outlier detection methods (such as https://scikit-learn.org/stable/modules/outlier_detection.html).
+ToDo's: 
+(1) test the old classifiers such as in anal_15Dec.py using test data from a different part of the same season as the training set; or better yet, a different season.
+(2) try out Outlier Detection methodology.
+
+
 3 December 2019
     It's good that the neural network code is now working.  72.5% accuracy is "interesting" but not good enough.
     Next steps include:  
