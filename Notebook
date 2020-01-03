@@ -1,3 +1,27 @@
+3 January 2020
+
+I'm trying to work with Yilun's pipeline code, and am getting stuck in working with .h5 files.  On feynman,
+I cannot read or write h5py files.   Here is a typical error message:
+   
+>>> f = h5py.File("htest.h5","w")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/mnt/act3/users/treu/miniconda2/lib/python2.7/site-packages/h5py/_hl/files.py", line 312, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/mnt/act3/users/treu/miniconda2/lib/python2.7/site-packages/h5py/_hl/files.py", line 148, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 98, in h5py.h5f.create
+IOError: Unable to create file (unable to lock file, errno = 37, error message = 'No locks available')
+
+So, instead,  I'll to create a full feature set (all ~11+3 features) from some new TODs, using my (older than 
+Yilun's pipeline) code.  
+
+
+
+
+
 15 Decemberr 2019
 anal_13Dec.py and anal_15Dec.py are on simons1 in the treu9 folder.
 anal_13Dec.py has an neural network section at the end which produces accuracy around 75% using 3 or 4 features 
