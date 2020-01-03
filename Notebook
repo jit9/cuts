@@ -16,7 +16,12 @@ Traceback (most recent call last):
 IOError: Unable to create file (unable to lock file, errno = 37, error message = 'No locks available')
 
 So, instead,  I'll to create a full feature set (all ~11+3 features) from some new TODs, using my (older than 
-Yilun's pipeline) code.  
+Yilun's pipeline) code.   But...
+I took one more try at h5py.   And tried updating h5py, which I got sucked into;  indeed it updated a lot of code.  Included
+in what was updated was python!   It downloaded and installed python 3.7x  So now I'm fussing with trying to make the rest of 
+my feynman code compatible;  this necessitated changes in .bashrc etc etc !
+
+
 
 
 
